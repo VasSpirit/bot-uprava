@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Регистрация</title><link rel="stylesheet" href="/static/styles.css"></head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+  <form method="post" class="bg-white p-6 rounded-xl shadow-md">
+    <h2 class="text-lg font-bold mb-4">Регистрация</h2>
+    {% if error %}<p class="text-red-500 mb-2">{{ error }}</p>{% endif %}
+    <input name="username" class="input" placeholder="Имя пользователя" required><br>
+    <input type="password" name="password" class="input mt-2" placeholder="Пароль" required><br>
+    <button class="btn mt-4">Регистрация</button>
+    <p class="mt-4 text-sm">Already have an account? <a href="/login" class="text-blue-500">Вход</a></p>
+  </form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+body { font-family: sans-serif; }
+.input {
+  width: 100%; padding: 0.5rem; border: 1px solid #ccc;
+  border-radius: 0.5rem; box-sizing: border-box;
+}
+.btn {
+  background: #3b82f6; color: white;
+  padding: 0.5rem 1rem; border-radius: 0.5rem;
+}

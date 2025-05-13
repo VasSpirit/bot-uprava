@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>Отправить</title><link rel="stylesheet" href="/static/styles.css"></head>
+<body class="p-10 bg-gray-100">
+  <div class="max-w-md mx-auto bg-white p-6 rounded-xl shadow-md">
+    <h2 class="text-xl font-bold mb-4">Привет, {{ user }}!</h2>
+<form method="post" action="/send">
+  <input name="chat_id" class="input mb-2" placeholder="Telegram Chat ID" required>
+
+  <label class="block mb-1">Быстрый шаблон:</label>
+  <div class="mb-2 space-x-2">
+    <button name="template" value="Ваше обращение принято в работу" class="btn" type="submit">Ваше обращение принято в работу!</button>
+    <button name="template" value="Спасибо!" class="btn" type="submit">Спасибо!</button>
+    <button name="template" value="Мы вам перезвоним." class="btn" type="Мы вам перезвоним.">Перезвонить</button>
+  </div>
+
+  <label class="block mb-1">Пользовательский шаблон (добавится к сообщению):</label>
+  <input name="custom_template" class="input mb-2" placeholder="Например: С уважением, команда поддержки.">
+
+  <textarea name="message" class="input mb-2 h-24" placeholder="Сообщение" required></textarea>
+  <button class="btn">Отправить</button>
+</form>
+    {% if sent is defined %}
+      <p class="mt-4 {{ 'text-green-600' if sent else 'text-red-600' }}">
+        {{ "Сообщение отправлено!" if sent else "Не удалось отправить сообщение." }}
+      </p>
+    {% endif %}
+    <a href="/logout" class="text-blue-500 mt-4 inline-block">Выйти</a>
+  </div>
+</body>
+</html>
