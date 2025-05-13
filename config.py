@@ -12,12 +12,12 @@ FILE_LIMIT_MB = 100
 FILE_LIMIT_BYTES = FILE_LIMIT_MB * 1024 * 1024
 
 # Токены и API
-TOKEN = '7462117397:AAGTDHHJAJnJ1oJWBsRA5BZQ_W0VwHDfMSY'
+TOKEN = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
 API_URL = f'https://api.telegram.org/bot{TOKEN}'
 
 # Логин и пароль для почты
-SENDER_EMAIL = 'eslicey@mail.ru'
-EMAIL_PASSWORD = '4TUZ20STrqgj6CLXQG4u'
+SENDER_EMAIL = 'XXXXXXXXXXXXXXX'
+EMAIL_PASSWORD = 'XXXXXXXXXXXXXXX'
 
 # Почта получателя
-RECEIVER_EMAILS = ['vas_spirit@live.com'] #если их несколько, то добаляем через запятую
+RECEIVER_EMAILS = ['XXXXXXXXXXXXX'] #если их несколько, то добаляем через запятую
