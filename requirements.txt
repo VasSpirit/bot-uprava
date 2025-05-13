@@ -1,0 +1,11 @@
+os
+logging
+smtplib
+mimetypes
+base64
+datetime
+email
+telegram
+telegram-ext
+weasyprint
+requests
